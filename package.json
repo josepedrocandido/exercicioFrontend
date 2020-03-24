@@ -8,7 +8,7 @@
         "deploy": "gh-pages -d build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Jesse Showalter",
+    "author": "Jose Candido",
     "license": "ISC",
     "devDependencies": {
         "browser-sync": "^2.26.3",
