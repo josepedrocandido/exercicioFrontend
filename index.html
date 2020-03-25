@@ -1,29 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <title>Jesse Showalter Starter Kit</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.min.css" />
+  <title>Altice</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.min.css" />
 </head>
 <body>
-  <section id="page-home">
-      <div class="wrapper-starter">
-          <h1>Jesse Showalter Starter Project</h1>
-          <p>A cool way to start your next project</p>
-          <a class="button" target="_blank" href="https://github.com/jesseshowalter/jesseshowalter-starter-project">Download it</a>
-          <h4>Check out the series where it all started</h4>
-          <div class="flex-video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLrtjkLnNjGHu7QIc8jN7hZmuP6wMby2QZ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-          <div class="author">
-              <img class="avatar" src="assets/img/avatar.jpg" alt="">
-              <p><strong>Jesse Showalter</strong></p>
-              <a target="_blank" href="https://twitter.com/iamjesseshow">@iamjesseshow</a>
-          </div>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">LOREM</a>
+  <a href="#">IPSUM</a>
+  <a href="#">DOLORES</a>
+  </div>
+  <div class="nav-bar">
+    <div class="nav-logo">
+      <img class="sapo-nav" src="./assets/img/sapo_symbol.png" alt="Sapo Company Logo">
+      <h3>SAPO</h3>
+    </div>
+    <span class="hamburguer-menu" onclick="openNav()">&#9776;</span>
+  </div>
+  <section id="page-home" class="page-home">
+    <div class="figures">
+      <div class="triangle triangle1">
+        <div class="line bottom background-color-changer"></div>
+        <div class="line left background-color-changer"></div>
+        <div class="line right background-color-changer"></div>
       </div>
+      <div class="triangle triangle2">
+        <div class="line bottom background-color-changer"></div>
+        <div class="line left background-color-changer"></div>
+        <div class="line right background-color-changer"></div>
+      </div>
+      <div class="rectangle rectangle1 border-color-changer"></div>
+      <div class="rectangle rectangle2 border-color-changer"></div>
+      <div class="circle circle1 border-color-changer"></div>
+    </div>
   </section>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/app.js"></script>
+  <section class="brand">
+    <div class="wrapper brand">
+      <img class="sapo-logo" src="./assets/img/sapo_symbol.png" alt="Sapo Company Logo">
+      <div id="buttons" class="buttons">
+        <button class="button-square green" onclick="changeColor($green)"></button>
+        <button class="button-square blue active" onclick="changeColor($blue)"></button>
+        <button class="button-square orange" onclick="changeColor($orange)"></button>
+      </div>
+      <div class="brand-content">
+        <div class="brand-tag">
+          <div class="brand-line"></div>
+          <h3>marca</h3>
+        </div>
+        <h1>SAPO</h1>
+      </div>
+    </div>
+    <div class="brand-box">
+      <div class="brand-container">
+        <h4>Estamos consigo desde 1995,
+          mas ainda mal começámos a tocar o futuro.
+        </h4>
+        <div>
+          <div class="collapse-button" onclick="collapaseFunction()">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <img class="sapo-icon" src="./assets/img/sapo.png" alt="Sapo">
+        </div>
+      </div>
+    </div>
+    <div id="collapse-div" class="brand-container text-space">
+      <div class="circle circle-dots border-color-changer"></div>
+      <p>Apostamos na credibilidade, na criatividade,
+        na inovação, na tecnologia e na proximidade.
+        <br><br>
+        Somos o SAPO,
+        <span class="highlight background-color-changer">vamos tornar a sua vida mais simples,
+        mais informada, mais divertida, mais prática</span>, aqui e
+        em todo o mundo. Queremos estar na sua vida.</p>
+    </div>
+    <div class="wrapper button-stickers">
+      <hr>
+      <a href="https://rd3.videos.sapo.pt/bRi3wOIOTyf2cWDtNkpj?jwsource=cl" target="_blank" rel="noopener noreferrer" title="Manifesto">
+        <div class="button1-sticker">
+        <p>Manifesto</p>
+        </div>
+      </a>
+      <a href="https://rd3.videos.sapo.pt/niJFYO47fFYMVA638E6a?jwsource=cl" target="_blank" rel="noopener noreferrer" title="Manifesto">
+        <div class="button2-sticker">
+        <p>O SAPO deu o salto</p>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="social-networks">
+      <img src="./assets/img/socialNetworks.png" alt="Sapo Social Networks">
+    </div>
+  </section>
+
+<script src="./assets/js/vendors.js"></script>
+<script src="./assets/js/app.js"></script>
+
 </body>
 </html>
