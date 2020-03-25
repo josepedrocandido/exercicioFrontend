@@ -1,0 +1,184 @@
+.page-home
+  background-color: $gray
+  background-image: url('../img/network.png')
+  background-size: cover
+  background-position: center
+  height: 85vh
+  &:after
+    top: 0
+    position: absolute
+    background: inherit
+    content: " "
+    height: 85vh
+    left: 0
+    right: 0
+    transform: skewY(-10deg)
+    transform-origin: 100%
+    z-index: -1
+
+.rectangle
+  position: absolute
+  width: 80px
+  height: 20px
+  border: 6px solid
+  border-color: $blue
+  transform: rotate(20deg)
+  &.rectangle1
+    top: 155px
+    left: 161px
+  &.rectangle2
+    top: 355px
+    left: 152px
+
+.circle
+  position: absolute
+  width: 65px
+  height: 65px
+  border-radius: 50%
+  border: 6px solid
+  border-color: $blue
+  &.circle1
+    top: 404px
+    left: 61px
+  &.circle-dots
+    width: 316px
+    height: 316px
+    border: 6px dotted
+    border-color: $blue
+    top: 1600px
+    right: -150px
+    z-index: -1
+
+
+// polygon
+//   fill: transparent
+//   stroke: $blue
+//   stroke-width: 6
+//   fill-rule: nonzero
+//
+// .triangle1
+//   height: 210px
+//   width: 500px
+//
+// .triangle2
+//   height: 210px
+//   width: 500px
+//   transform: rotate(25deg)
+
+
+
+.triangle
+  position: absolute
+  width: 95px
+  height: 140px
+  &.triangle1
+    top: 170px
+    left: 30px
+    transform: scale(0.7)
+  &.triangle2
+    top: 400px
+    left: 200px
+
+.line
+  background-color: $blue
+  position: absolute
+  &.bottom
+    height: 5px
+    width: 100%
+    bottom: 0px
+  &.left
+    top: 67px
+    left: -34px
+    transform: rotate(-55deg)
+    height: 5px
+    width: 166px
+  &.right
+    height: 100%
+    width: 5px
+    left: 100%
+
+.sapo-logo
+  margin-top: -160px
+  width: 100%
+
+.buttons
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  padding-bottom: 40px
+
+.button-square
+  height: 80px
+  width: 80px
+  border: none
+  outline: none
+  &.active
+    height: 100px
+    width: 100px
+    outline-offset: 4px
+    outline: solid 2px
+    outline-color: yellow
+
+.green
+  background-color: $green
+  &.active
+    outline-color: $green
+
+.blue
+  background-color: $blue
+  &.active
+    outline-color: $blue
+
+.orange
+  background-color: $orange
+  &.active
+    outline-color: $orange
+
+.brand-content
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  width: 50%
+
+.brand-tag
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+  margin-bottom: 10px
+  h3
+    color: $gray
+
+.brand-line
+  height: 100px
+  width: 6px
+  background-color: $gray
+  margin: 10px 15px
+
+.brand-box
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+  margin-top: 40px
+
+.brand-container
+  display: flex
+  justify-content: flex-end
+  width: 96%
+  background-color: $white
+  padding: 20px
+  z-index: 1
+  h4
+    color: $gray
+  .sapo-icon
+    width: 70px
+    height: 170px
+
+.text-space
+  background-color: transparent
+  float: right
+  padding-right: 70px
+
+.highlight
+  background-color: $blue
+  color: $white

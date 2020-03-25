@@ -1,18 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Jesse Showalter Starter Kit</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.min.css" />
+  <title>Altice</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.min.css" />
 </head>
 <body>
-  <section id="page-home">
-      <div class="wrapper-starter">
-
+  <section id="page-home" class="page-home">
+    <div class="figures">
+      <!-- <svg class="triangle1">
+        <polygon class="border-color-changer" points="100,10 40,198 190,78"/>
+      </svg>
+      <svg class="triangle2">
+        <polygon class="border-color-changer" points="25,5 10,100 100,35"/>
+      </svg> -->
+      <div class="triangle triangle1">
+        <div class="line bottom background-color-changer"></div>
+        <div class="line left background-color-changer"></div>
+        <div class="line right background-color-changer"></div>
       </div>
+      <div class="triangle triangle2">
+        <div class="line bottom background-color-changer"></div>
+        <div class="line left background-color-changer"></div>
+        <div class="line right background-color-changer"></div>
+      </div>
+      <div class="rectangle rectangle1 border-color-changer"></div>
+      <div class="rectangle rectangle2 border-color-changer"></div>
+      <div class="circle circle1 border-color-changer"></div>
+    </div>
   </section>
+
+  <section>
+    <div class="wrapper brand">
+      <img class="sapo-logo" src="./assets/img/sapo_symbol.png" alt="Sapo Company Logo">
+      <div id="buttons" class="buttons">
+        <button class="button-square green" onclick="changeColor($green)"></button>
+        <button class="button-square blue active" onclick="changeColor($blue)"></button>
+        <button class="button-square orange" onclick="changeColor($orange)"></button>
+      </div>
+      <div class="brand-content">
+        <div class="brand-tag">
+          <div class="brand-line"></div>
+          <h3>marca</h3>
+        </div>
+        <h1>SAPO</h1>
+      </div>
+    </div>
+
+    <div class="brand-box">
+      <div class="brand-container">
+        <h4>Estamos consigo desde 1995,
+          mas ainda mal começámos a tocar o futuro.
+        </h4>
+        <div class="">
+          <img class="sapo-icon" src="./assets/img/sapo.png" alt="Sapo">
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-container text-space">
+      <div class="circle circle-dots border-color-changer"></div>
+      <p>Apostamos na credibilidade, na criatividade,
+        na inovação, na tecnologia e na proximidade.
+        <br><br>
+        Somos o SAPO,
+        <span class="highlight background-color-changer">vamos tornar a sua vida mais simples,
+        mais informada, mais divertida, mais prática</span>, aqui e
+        em todo o mundo. Queremos estar na sua vida.</p>
+    </div>
+  </section>
+
+
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/app.js"></script>
+
 </body>
 </html>
