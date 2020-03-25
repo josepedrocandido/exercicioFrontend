@@ -224,9 +224,6 @@ h1, h2, h3, h4, h5, h6 {
 .large, h2 {
   font-size: 42px;
   line-height: 1.14; }
-  @media only screen and (max-width: 680px) {
-    .large, h2 {
-      font-size: 32px; } }
 
 h3 {
   font-size: 33px;
@@ -260,37 +257,45 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
-.page-home {
-  background-color: #666666;
-  background-image: url("../img/network.png");
-  background-size: cover;
-  background-position: center;
-  height: 85vh; }
-  .page-home:after {
-    top: 0;
-    position: absolute;
-    background: inherit;
-    content: " ";
-    height: 85vh;
-    left: 0;
-    right: 0;
-    transform: skewY(-10deg);
-    transform-origin: 100%;
-    z-index: -1; }
+.nav-logo {
+  display: flex;
+  align-items: center; }
+  .nav-logo h3 {
+    color: #fff;
+    font-weight: bold; }
 
-.rectangle {
-  position: absolute;
-  width: 80px;
-  height: 20px;
-  border: 6px solid;
-  border-color: #3399CC;
-  transform: rotate(20deg); }
-  .rectangle.rectangle1 {
-    top: 155px;
-    left: 161px; }
-  .rectangle.rectangle2 {
-    top: 355px;
-    left: 152px; }
+.sapo-nav {
+  width: 60px;
+  margin-right: 10px; }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s; }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px; }
 
 .circle {
   position: absolute;
@@ -302,14 +307,31 @@ hr {
   .circle.circle1 {
     top: 404px;
     left: 61px; }
-  .circle.circle-dots {
-    width: 316px;
-    height: 316px;
-    border: 6px dotted;
-    border-color: #3399CC;
-    top: 1600px;
-    right: -150px;
-    z-index: -1; }
+
+.circle-dots {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 6px dotted;
+  border-color: #3399CC;
+  right: -180px;
+  top: 50px;
+  z-index: -1; }
+
+.rectangle {
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  border: 6px solid;
+  border-color: #3399CC;
+  transform: rotate(20deg); }
+  .rectangle.rectangle1 {
+    top: 155px;
+    left: 50%; }
+  .rectangle.rectangle2 {
+    top: 355px;
+    left: 50%; }
 
 .triangle {
   position: absolute;
@@ -321,7 +343,7 @@ hr {
     transform: scale(0.7); }
   .triangle.triangle2 {
     top: 400px;
-    left: 200px; }
+    right: 50px; }
 
 .line {
   background-color: #3399CC;
@@ -340,17 +362,6 @@ hr {
     height: 100%;
     width: 5px;
     left: 100%; }
-
-.sapo-logo {
-  margin-top: -160px;
-  width: 100%; }
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 40px; }
 
 .button-square {
   height: 80px;
@@ -375,15 +386,45 @@ hr {
     outline-color: #3399CC; }
 
 .orange {
-  background-color: #FF851B; }
+  background-color: #FF9933; }
   .orange.active {
-    outline-color: #FF851B; }
+    outline-color: #FF9933; }
 
-.brand-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 50%; }
+.collapse-button {
+  position: absolute;
+  right: 4%;
+  bottom: 20px; }
+  .collapse-button .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #111;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 5px; }
+
+.button-stickers hr {
+  border-top: 0px; }
+
+.button-stickers p {
+  color: #fff;
+  margin-left: 15px;
+  line-height: 50px; }
+
+.button-stickers a {
+  text-decoration: none; }
+
+.button-stickers .button1-sticker {
+  clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%);
+  width: 200px;
+  height: 50px;
+  background-color: #5B8F22;
+  margin-bottom: 20px; }
+
+.button-stickers .button2-sticker {
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+  width: 300px;
+  height: 50px;
+  background-color: #7AB800; }
 
 .brand-tag {
   display: flex;
@@ -406,6 +447,8 @@ hr {
   margin-top: 40px; }
 
 .brand-container {
+  position: relative;
+  overflow-x: hidden;
   display: flex;
   justify-content: flex-end;
   width: 96%;
@@ -426,3 +469,63 @@ hr {
 .highlight {
   background-color: #3399CC;
   color: #fff; }
+
+.page-home {
+  background-color: #666666;
+  background-image: url("../img/network.png");
+  background-size: cover;
+  background-position: center;
+  height: 85vh; }
+  .page-home::after {
+    top: 0;
+    position: absolute;
+    background: inherit;
+    content: " ";
+    height: 85vh;
+    left: 0;
+    right: 0;
+    transform: skewY(-10deg);
+    transform-origin: 100%;
+    z-index: -1; }
+
+.nav-bar {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; }
+
+.hamburguer-menu {
+  font-size: 50px;
+  cursor: pointer; }
+
+.sapo-logo {
+  margin-top: -160px;
+  width: 100%; }
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 40px; }
+
+.brand-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%; }
+
+.social-networks {
+  margin-top: 40px;
+  clip-path: polygon(0 0, 100% 18%, 100% 100%, 0% 100%);
+  height: 250px;
+  background-color: #7AB800;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .social-networks img {
+    width: auto; }
