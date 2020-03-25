@@ -202,6 +202,9 @@ body {
   width: 100%;
   max-width: 320px;
   margin: 0 auto; }
+  @media only screen and (min-width: 1200px) {
+    .wrapper {
+      max-width: 1300px; } }
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
@@ -318,6 +321,9 @@ hr {
   right: -180px;
   top: 50px;
   z-index: -1; }
+  @media only screen and (min-width: 1200px) {
+    .circle-dots {
+      left: 5%; } }
 
 .rectangle {
   position: absolute;
@@ -455,6 +461,9 @@ hr {
   background-color: #fff;
   padding: 20px;
   z-index: 1; }
+  @media only screen and (min-width: 1200px) {
+    .brand-container {
+      width: 50%; } }
   .brand-container h4 {
     color: #666666; }
   .brand-container .sapo-icon {
@@ -476,6 +485,9 @@ hr {
   background-size: cover;
   background-position: center;
   height: 85vh; }
+  @media only screen and (min-width: 1200px) {
+    .page-home {
+      margin-bottom: 500px; } }
   .page-home::after {
     top: 0;
     position: absolute;
@@ -487,8 +499,18 @@ hr {
     transform: skewY(-10deg);
     transform-origin: 100%;
     z-index: -1; }
+    @media only screen and (min-width: 1200px) {
+      .page-home::after {
+        height: 100vh; } }
 
-.nav-bar {
+@media only screen and (min-width: 1200px) {
+  .figures {
+    position: absolute;
+    width: 50%;
+    right: 2%;
+    top: 10%; } }
+
+.nav-bar, .nav-bar-desktop {
   position: absolute;
   width: 100%;
   height: 80px;
@@ -497,6 +519,37 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 20px; }
+  .nav-bar .menu-options-text, .nav-bar-desktop .menu-options-text {
+    color: #111;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 40px;
+    margin: 10px 0px; }
+    .nav-bar .menu-options-text:hover, .nav-bar-desktop .menu-options-text:hover {
+      color: #fff; }
+    .nav-bar .menu-options-text:active, .nav-bar-desktop .menu-options-text:active {
+      color: #fff;
+      background-color: #111; }
+
+.nav-bar-desktop {
+  display: none; }
+
+@media only screen and (min-width: 1200px) {
+  .nav-bar {
+    display: none; }
+  .nav-bar-desktop {
+    display: flex; }
+  .desktop-buttons {
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 15%; } }
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px; }
 
 .hamburguer-menu {
   font-size: 50px;
@@ -505,6 +558,11 @@ hr {
 .sapo-logo {
   margin-top: -160px;
   width: 100%; }
+  @media only screen and (min-width: 1200px) {
+    .sapo-logo {
+      margin-top: -600px;
+      width: 40%;
+      float: right; } }
 
 .buttons {
   display: flex;
