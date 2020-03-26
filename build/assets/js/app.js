@@ -29,8 +29,9 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 // Collapse brand text
-function collapaseFunction() {
-  var x = document.getElementById("collapse-div");
+function collapaseFunction(format) {
+  var divName = "collapse-div-"
+  var x = document.getElementById(divName.concat(format));
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {

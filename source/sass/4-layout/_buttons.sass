@@ -29,6 +29,9 @@
   position: absolute
   right: 4%
   bottom: 20px
+  @media only screen and (min-width: $desktop)
+    right: 25%
+    bottom: unset
   .dot
     height: 10px
     width: 10px
@@ -38,6 +41,8 @@
     margin-bottom: 5px
 
 .button-stickers
+  display: flex
+  flex-direction: column
   hr
     border-top: 0px
   p
@@ -46,6 +51,9 @@
     line-height: 50px
   a
     text-decoration: none
+  @media only screen and (min-width: $desktop)
+    margin-left: 45%
+    flex-direction: row
   .button1-sticker
     clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%)
     width: 200px
@@ -57,3 +65,6 @@
     width: 300px
     height: 50px
     background-color: $greenButton2
+    @media only screen and (min-width: $desktop)
+      clip-path: polygon(11% 0, 100% 0%, 89% 100%, 0% 100%)
+      padding: 0px 20px
