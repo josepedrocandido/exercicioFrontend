@@ -1,6 +1,9 @@
 # SAPO Challenge - José Cândido
 
 - [**Project Live**](https://josepedrocandido.github.io/exercicioFrontend/)
+
+In the development of this project I followed a mobile-first methodology and used HTML5, SASS and Javascript as tools.
+
 - [Check my CV](https://drive.google.com/file/d/12Hnd9yQWrSfzFOkjvQjkaiwrBBkSVOhz/view)
 - [Behance](https://www.behance.net/josepedrocandido)
 - [LinkedIn](https://www.linkedin.com/in/josepedrocandido/)
