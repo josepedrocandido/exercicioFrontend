@@ -1,8 +1,9 @@
-# Jesse Showalter Website Project Starter Kit
+# SAPO Challenge - José Cândido
 
-This is how I start my project, maybe you can use it too :) This  starter file is a collectiopn of things I have learned over the years, code snippets I have created and other that were collected from other people who are smarter than me to make soimething I really enjoy using.
-
-Check out [The YouTube series to see my process](https://www.youtube.com/watch?v=sr6jDeAoXCc&feature=youtu.be&list=PLrtjkLnNjGHu7QIc8jN7hZmuP6wMby2QZ) for more info.
+- [Check my CV](https://drive.google.com/file/d/12Hnd9yQWrSfzFOkjvQjkaiwrBBkSVOhz/view)
+- [Behance](https://www.behance.net/josepedrocandido)
+- [LinkedIn](https://www.linkedin.com/in/josepedrocandido/)
+- [My Website](https://josepedrocandido.pt/)
 
 ***
 
@@ -42,11 +43,5 @@ Once you have the project running in the terminal you can delete the partial
 ```
 sources/sass/6-pages.sass
 ```
-It's purpose is purley to get you started and have something "schmancy" on the screen when it launches. delete it and start writing your very own "schmancy" code for your project.
-
-If you want to use SCSS or LESS feel free to make that change in the file types and update the gulpfile to look for the right file types also.
-
-
-Feel free to add onto this project by forking it and making it your own, This is just a basic start but work for most basic project without a lot of fancy bells and whistles.
 
 Cheers 👍🏼
