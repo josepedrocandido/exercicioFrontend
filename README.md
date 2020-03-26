@@ -1,5 +1,6 @@
 # SAPO Challenge - José Cândido
 
+- **[Project Live]**(https://josepedrocandido.github.io/exercicioFrontend/)
 - [Check my CV](https://drive.google.com/file/d/12Hnd9yQWrSfzFOkjvQjkaiwrBBkSVOhz/view)
 - [Behance](https://www.behance.net/josepedrocandido)
 - [LinkedIn](https://www.linkedin.com/in/josepedrocandido/)
