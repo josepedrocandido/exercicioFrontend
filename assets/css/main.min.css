@@ -202,6 +202,9 @@ body {
   width: 100%;
   max-width: 320px;
   margin: 0 auto; }
+  @media only screen and (min-width: 1200px) {
+    .wrapper {
+      max-width: 1300px; } }
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
@@ -307,6 +310,9 @@ hr {
   .circle.circle1 {
     top: 404px;
     left: 61px; }
+  .circle.circle2 {
+    top: 1450px;
+    right: 400px; }
 
 .circle-dots {
   position: absolute;
@@ -318,6 +324,10 @@ hr {
   right: -180px;
   top: 50px;
   z-index: -1; }
+  @media only screen and (min-width: 1200px) {
+    .circle-dots {
+      top: 1600px;
+      left: 350px; } }
 
 .rectangle {
   position: absolute;
@@ -344,6 +354,9 @@ hr {
   .triangle.triangle2 {
     top: 400px;
     right: 50px; }
+  .triangle.triangle3 {
+    top: 1300px;
+    left: 200px; }
 
 .line {
   background-color: #3399CC;
@@ -394,6 +407,10 @@ hr {
   position: absolute;
   right: 4%;
   bottom: 20px; }
+  @media only screen and (min-width: 1200px) {
+    .collapse-button {
+      right: 25%;
+      bottom: unset; } }
   .collapse-button .dot {
     height: 10px;
     width: 10px;
@@ -402,29 +419,36 @@ hr {
     display: block;
     margin-bottom: 5px; }
 
-.button-stickers hr {
-  border-top: 0px; }
-
-.button-stickers p {
-  color: #fff;
-  margin-left: 15px;
-  line-height: 50px; }
-
-.button-stickers a {
-  text-decoration: none; }
-
-.button-stickers .button1-sticker {
-  clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%);
-  width: 200px;
-  height: 50px;
-  background-color: #5B8F22;
-  margin-bottom: 20px; }
-
-.button-stickers .button2-sticker {
-  clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
-  width: 300px;
-  height: 50px;
-  background-color: #7AB800; }
+.button-stickers {
+  display: flex;
+  flex-direction: column; }
+  .button-stickers hr {
+    border-top: 0px; }
+  .button-stickers p {
+    color: #fff;
+    margin-left: 15px;
+    line-height: 50px; }
+  .button-stickers a {
+    text-decoration: none; }
+  @media only screen and (min-width: 1200px) {
+    .button-stickers {
+      margin-left: 45%;
+      flex-direction: row; } }
+  .button-stickers .button1-sticker {
+    clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%);
+    width: 200px;
+    height: 50px;
+    background-color: #5B8F22;
+    margin-bottom: 20px; }
+  .button-stickers .button2-sticker {
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    width: 300px;
+    height: 50px;
+    background-color: #7AB800; }
+    @media only screen and (min-width: 1200px) {
+      .button-stickers .button2-sticker {
+        clip-path: polygon(11% 0, 100% 0%, 89% 100%, 0% 100%);
+        padding: 0px 20px; } }
 
 .brand-tag {
   display: flex;
@@ -439,6 +463,27 @@ hr {
   width: 6px;
   background-color: #666666;
   margin: 10px 15px; }
+
+@media only screen and (min-width: 1200px) {
+  .brand-details {
+    display: none; } }
+
+.brand-details-desktop {
+  display: none; }
+  @media only screen and (min-width: 1200px) {
+    .brand-details-desktop {
+      display: flex;
+      margin-top: 35px;
+      margin-bottom: 150px; }
+      .brand-details-desktop .brand-details-left {
+        width: 50%;
+        height: fit-content;
+        display: flex;
+        justify-content: flex-end; }
+      .brand-details-desktop .brand-details-right {
+        width: 43%;
+        z-index: 2;
+        margin-left: -70px; } }
 
 .brand-box {
   display: flex;
@@ -455,16 +500,31 @@ hr {
   background-color: #fff;
   padding: 20px;
   z-index: 1; }
+  @media only screen and (min-width: 1200px) {
+    .brand-container {
+      width: 50%;
+      justify-content: flex-start;
+      padding: 20px 50px; } }
   .brand-container h4 {
     color: #666666; }
   .brand-container .sapo-icon {
     width: 70px;
     height: 170px; }
+    @media only screen and (min-width: 1200px) {
+      .brand-container .sapo-icon {
+        width: 85px;
+        height: 225px;
+        transform: scaleX(-1); } }
 
 .text-space {
   background-color: transparent;
   float: right;
-  padding-right: 70px; }
+  padding-right: 70px;
+  min-height: 400px; }
+  @media only screen and (min-width: 1200px) {
+    .text-space {
+      float: none;
+      padding: 0px; } }
 
 .highlight {
   background-color: #3399CC;
@@ -476,6 +536,9 @@ hr {
   background-size: cover;
   background-position: center;
   height: 85vh; }
+  @media only screen and (min-width: 1200px) {
+    .page-home {
+      margin-bottom: 500px; } }
   .page-home::after {
     top: 0;
     position: absolute;
@@ -487,8 +550,18 @@ hr {
     transform: skewY(-10deg);
     transform-origin: 100%;
     z-index: -1; }
+    @media only screen and (min-width: 1200px) {
+      .page-home::after {
+        height: 100vh; } }
 
-.nav-bar {
+@media only screen and (min-width: 1200px) {
+  .figures {
+    position: absolute;
+    width: 50%;
+    right: 2%;
+    top: 10%; } }
+
+.nav-bar, .nav-bar-desktop {
   position: absolute;
   width: 100%;
   height: 80px;
@@ -497,6 +570,37 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 20px; }
+  .nav-bar .menu-options-text, .nav-bar-desktop .menu-options-text {
+    color: #111;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 40px;
+    margin: 10px 0px; }
+    .nav-bar .menu-options-text:hover, .nav-bar-desktop .menu-options-text:hover {
+      color: #fff; }
+    .nav-bar .menu-options-text:active, .nav-bar-desktop .menu-options-text:active {
+      color: #fff;
+      background-color: #111; }
+
+.nav-bar-desktop {
+  display: none; }
+
+@media only screen and (min-width: 1200px) {
+  .nav-bar {
+    display: none; }
+  .nav-bar-desktop {
+    display: flex; }
+  .desktop-buttons {
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 15%; } }
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px; }
 
 .hamburguer-menu {
   font-size: 50px;
@@ -505,6 +609,11 @@ hr {
 .sapo-logo {
   margin-top: -160px;
   width: 100%; }
+  @media only screen and (min-width: 1200px) {
+    .sapo-logo {
+      margin-top: -600px;
+      width: 40%;
+      float: right; } }
 
 .buttons {
   display: flex;
@@ -513,11 +622,20 @@ hr {
   width: 100%;
   padding-bottom: 40px; }
 
+@media only screen and (min-width: 1200px) {
+  .brand-content-box {
+    display: flex;
+    justify-content: center;
+    width: unset; } }
+
 .brand-content {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   width: 50%; }
+  @media only screen and (min-width: 1200px) {
+    .brand-content {
+      width: unset; } }
 
 .social-networks {
   margin-top: 40px;

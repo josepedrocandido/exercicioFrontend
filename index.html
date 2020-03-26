@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <title>Altice</title>
+  <title>SAPO Challenge</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/main.min.css" />
+  <link rel="shortcut icon" href="./assets/img/sapo_symbol.png">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="SAPO Challenge - José Cândido">
+  <meta name="description" content="José Cândido SAPO Challenge.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./assets/img/sapo_symbol.png">
+  <meta property="og:title" content="SAPO Challenge - José Cândido">
+  <meta property="og:description" content="José Cândido SAPO Challenge.">
+  <meta property="og:image" content="./assets/img/sapo_symbol.png">
+
 </head>
 <body>
   <div id="mySidenav" class="sidenav">
@@ -13,6 +25,7 @@
   <a href="#">IPSUM</a>
   <a href="#">DOLORES</a>
   </div>
+
   <div class="nav-bar">
     <div class="nav-logo">
       <img class="sapo-nav" src="./assets/img/sapo_symbol.png" alt="Sapo Company Logo">
@@ -20,6 +33,22 @@
     </div>
     <span class="hamburguer-menu" onclick="openNav()">&#9776;</span>
   </div>
+  <div class="nav-bar-desktop">
+    <div class="wrapper">
+      <div class="nav-content">
+        <div class="nav-logo">
+          <img class="sapo-nav" src="./assets/img/sapo_symbol.png" alt="Sapo Company Logo">
+          <h3>SAPO</h3>
+        </div>
+        <div class="menu-options">
+          <a class="menu-options-text" href="#">LOREM</a>
+          <a class="menu-options-text" href="#">IPSUM</a>
+          <a class="menu-options-text" href="#">DOLORES</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section id="page-home" class="page-home">
     <div class="figures">
       <div class="triangle triangle1">
@@ -37,29 +66,34 @@
       <div class="circle circle1 border-color-changer"></div>
     </div>
   </section>
+
   <section class="brand">
-    <div class="wrapper brand">
+    <div class="wrapper">
       <img class="sapo-logo" src="./assets/img/sapo_symbol.png" alt="Sapo Company Logo">
-      <div id="buttons" class="buttons">
-        <button class="button-square green" onclick="changeColor($green)"></button>
-        <button class="button-square blue active" onclick="changeColor($blue)"></button>
-        <button class="button-square orange" onclick="changeColor($orange)"></button>
-      </div>
-      <div class="brand-content">
-        <div class="brand-tag">
-          <div class="brand-line"></div>
-          <h3>marca</h3>
+      <div class="desktop-buttons">
+        <div id="buttons" class="buttons">
+          <button class="button-square green" onclick="changeColor($green)"></button>
+          <button class="button-square blue active" onclick="changeColor($blue)"></button>
+          <button class="button-square orange" onclick="changeColor($orange)"></button>
         </div>
-        <h1>SAPO</h1>
+      </div>
+      <div class="brand-content-box">
+        <div class="brand-content">
+          <div class="brand-tag">
+            <div class="brand-line"></div>
+            <h3>marca</h3>
+          </div>
+          <h1>SAPO</h1>
+        </div>
       </div>
     </div>
-    <div class="brand-box">
-      <div class="brand-container">
-        <h4>Estamos consigo desde 1995,
-          mas ainda mal começámos a tocar o futuro.
-        </h4>
-        <div>
-          <div class="collapse-button" onclick="collapaseFunction()">
+    <div class="brand-details">
+      <div class="brand-box">
+        <div class="brand-container">
+          <h4>Estamos consigo desde 1995,
+            mas ainda mal começámos a tocar o futuro.
+          </h4>
+          <div class="collapse-button" onclick="collapaseFunction('mobile')">
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
@@ -67,16 +101,51 @@
           <img class="sapo-icon" src="./assets/img/sapo.png" alt="Sapo">
         </div>
       </div>
+      <div id="collapse-div-mobile" class="brand-container text-space">
+        <div class="circle circle-dots border-color-changer"></div>
+        <p>Apostamos na credibilidade, na criatividade,
+          na inovação, na tecnologia e na proximidade.
+          <br><br>
+          Somos o SAPO,
+          <span class="highlight background-color-changer">vamos tornar a sua vida mais simples,
+          mais informada, mais divertida, mais prática</span>, aqui e
+          em todo o mundo. Queremos estar na sua vida.</p>
+      </div>
     </div>
-    <div id="collapse-div" class="brand-container text-space">
-      <div class="circle circle-dots border-color-changer"></div>
-      <p>Apostamos na credibilidade, na criatividade,
-        na inovação, na tecnologia e na proximidade.
+    <div class="brand-details-desktop wrapper">
+      <div class="brand-details-left">
+        <div class="brand-container">
+          <img class="sapo-icon" src="./assets/img/sapo.png" alt="Sapo">
+        </div>
+        <div class="circle circle-dots border-color-changer"></div>
+        <div class="triangle triangle3">
+          <div class="line bottom background-color-changer"></div>
+          <div class="line left background-color-changer"></div>
+          <div class="line right background-color-changer"></div>
+        </div>
+        <div class="circle circle2 border-color-changer"></div>
+      </div>
+      <div class="brand-details-right">
         <br><br>
-        Somos o SAPO,
-        <span class="highlight background-color-changer">vamos tornar a sua vida mais simples,
-        mais informada, mais divertida, mais prática</span>, aqui e
-        em todo o mundo. Queremos estar na sua vida.</p>
+        <h4>Estamos consigo desde 1995,
+          mas ainda mal começámos a tocar o futuro.
+        </h4>
+        <div id="collapse-div-desktop" class="text-space">
+          <br><br>
+          <p>Apostamos na credibilidade, na criatividade,
+            na inovação, na tecnologia e na proximidade.
+            <br><br>
+            Somos o SAPO,
+            <span class="highlight background-color-changer">vamos tornar a sua vida mais simples,
+            mais informada, mais divertida, mais prática</span>, aqui e
+            em todo o mundo. Queremos estar na sua vida.</p>
+        </div>
+        <div class="collapse-button" onclick="collapaseFunction('desktop')">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
     </div>
     <div class="wrapper button-stickers">
       <hr>
@@ -98,7 +167,6 @@
     </div>
   </section>
 
-<script src="./assets/js/vendors.js"></script>
 <script src="./assets/js/app.js"></script>
 
 </body>
